@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Haven | Pet Adoption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐾 NEX ORA PET SHOP</h1>
+        <p>Find Your New Best Friend!</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add a Pet</h2>
+
+            <form id="petForm">
+                <input type="text" id="petName"
+                       placeholder="Pet Name" required>
+
+                <input type="text" id="petBreed"
+                       placeholder="Pet Breed" required>
+
+                <input type="number" id="petAge"
+                       placeholder="Pet Age" min="0" required>
+
+                <select id="petType" required>
+                    <option value="">Select Pet Type</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                </select>
+
+                <button type="submit">Add Pet</button>
+            </form>
+        </section>
+
+        <section class="pets-section">
+            <h2>Available Pets 🐶🐱</h2>
+            <div id="petList" class="pet-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for animals</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
